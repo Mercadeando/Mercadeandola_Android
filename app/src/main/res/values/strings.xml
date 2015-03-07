@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">loginface</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="facebook_app_id">721910304596866</string>
+    <string name="text_login">INICIAR SESIÓN</string>
+    <string name="text_logout">CERRAR SESIÓN</string>
+    <string name="text_pefil">PERFIL</string>
+    <string name="text_request_josn">RESPUESTA EN JSON</string>
+    <string name="message_not_logged">Aun no Inicias Sesión</string>
+    <string name="title_activity_pefil">Perfil</string>
+    <string name="title_activity_json">Json</string>
+    <string name="message_log_out">Se cerro la Sesión</string>
+    <string name="message_error">Ocurrió un error, verifica tu conexión a Internet y vuelve a intentarlo</string>
+    <string name="welcome">Bienvenido</string>
+    <string name="text_share">COMPARTIR</string>
+
+    <string name="text_fist_name">Nombre: </string>
+    <string name="text_last_name">Apellido: </string>
+    <string name="text_email">Email:</string>
+    <string name="text_birthday">Fecha de Nacimiento:</string>
+    <string name="text_gender">Genero:</string>
+    <string name="url_devf">http://www.devf.mx/</string>
+    <string name="ur_devf_logo">http://www.devf.mx/images/og-devf.png</string>
+    <string name="text_devf_share">Entra a la mejor escuela de Hackers</string>
+
+
+</resources>

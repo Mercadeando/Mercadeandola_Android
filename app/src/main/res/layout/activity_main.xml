@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <com.facebook.widget.LoginButton
+
+        android:id="@+id/buttonLoginFacebook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_pefil"
+        android:textColor="@android:color/white"
+        android:id="@+id/buttonPefil"
+        android:textStyle="bold"
+        android:background="@drawable/drawable_btn_default"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/buttonLoginFacebook"
+        tools:ignore="UnusedAttribute" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_request_josn"
+        android:textColor="@android:color/white"
+        android:id="@+id/buttonRequestJson"
+        android:textStyle="bold"
+        android:background="@drawable/drawable_btn_default"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/buttonPefil"
+        tools:ignore="UnusedAttribute" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_share"
+        android:textColor="@android:color/white"
+        android:id="@+id/buttonShare"
+        android:textStyle="bold"
+        android:background="@drawable/drawable_btn_default"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/buttonRequestJson"
+        tools:ignore="UnusedAttribute" />
+
+
+</RelativeLayout>
