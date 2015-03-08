@@ -10,13 +10,16 @@ public class Product {
     public String description;
     public double price;
     public boolean selected;
+    public String color;
 
     public Product(String title, Drawable productImage, String description,
-                   double price) {
+                   double price,String color) {
         this.title = title;
         this.productImage = productImage;
         this.description = description;
         this.price = price;
+        this.color = color;
+
     }
 
 }
