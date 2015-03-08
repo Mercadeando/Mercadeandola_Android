@@ -70,7 +70,7 @@ public class ShoppingCartActivity extends Activity {
 
             @Override
             public void onClick(View v) {
-                Intent confirmation = new Intent(getBaseContext(), Confirmation.class);
+                Intent confirmation = new Intent(ShoppingCartActivity.this, Confirmation.class);
                 startActivity(confirmation);
             }
         });

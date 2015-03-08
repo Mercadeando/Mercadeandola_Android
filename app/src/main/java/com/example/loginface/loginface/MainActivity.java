@@ -162,6 +162,8 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
                             if (user != null) {
 
                                 Toast.makeText(MainActivity.this, getString(R.string.welcome) + " " + user.getName(), Toast.LENGTH_SHORT).show();
+                                Intent intent = new Intent(MainActivity.this, CatalogActivity.class);
+                                startActivity(intent);
 
 
                             } else {

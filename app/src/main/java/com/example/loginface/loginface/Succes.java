@@ -9,20 +9,20 @@ import android.widget.Button;
 /**
  * Created by Ricardo on 08/03/2015.
  */
-public class Confirmation extends Activity {
+public class Succes extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.confirmation);
+        setContentView(R.layout.succes);
 
 
-        Button acceptButton = (Button) findViewById(R.id.buttonAccept);
-        acceptButton.setOnClickListener(new View.OnClickListener() {
+        Button homeButton = (Button) findViewById(R.id.buttonHome);
+        homeButton.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
-                Intent wait = new Intent(Confirmation.this, Waiting.class);
-                startActivity(wait);
+                Intent home = new Intent(Succes.this, CatalogActivity.class);
+                startActivity(home);
             }
         });
 

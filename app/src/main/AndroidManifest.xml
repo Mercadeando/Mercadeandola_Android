@@ -11,7 +11,7 @@
         android:theme="@style/AppTheme" >
         <activity
             android:name=".Splash"
-            android:label="@string/splash" >
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -57,6 +57,18 @@
 
         <activity
             android:name=".ShoppingCartActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".Confirmation"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".Waiting"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".Succes"
             android:label="@string/app_name" >
         </activity>
     </application>
