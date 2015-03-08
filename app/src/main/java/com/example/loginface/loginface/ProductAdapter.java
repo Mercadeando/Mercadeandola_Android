@@ -51,6 +51,8 @@ public class ProductAdapter extends BaseAdapter {
 
             item.productTitle = (TextView) convertView.findViewById(R.id.TextViewItem);
 
+            item.cantidad = (TextView) convertView.findViewById(R.id.txtCantidad);
+
             item.productCheckbox = (CheckBox) convertView.findViewById(R.id.CheckBoxSelected);
 
             convertView.setTag(item);
@@ -81,6 +83,7 @@ public class ProductAdapter extends BaseAdapter {
         ImageView productImageView;
         CheckBox productCheckbox;
         TextView productTitle;
+        TextView cantidad;
     }
 
 }

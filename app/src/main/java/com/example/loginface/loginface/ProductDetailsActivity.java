@@ -34,13 +34,15 @@ public class ProductDetailsActivity extends Activity {
         TextView productDetailsTextView = (TextView) findViewById(R.id.TextViewProductDetails);
         productDetailsTextView.setText(selectedProduct.description);
 
+        TextView productCantidad = (TextView) findViewById(R.id.txtCantidad);
+        productCantidad.setText(selectedProduct.cantidad);
+
+
         Button addToCartButton = (Button) findViewById(R.id.ButtonAddToCart);
         addToCartButton.setOnClickListener(new OnClickListener() {
 
             @Override
             public void onClick(View v) {
-
-
                 cart.add(selectedProduct);
                 finish();
             }

@@ -18,28 +18,28 @@ public class ShoppingCartHelper {
             catalog = new Vector<>();
             catalog.add(new Product("Jitomates", res
                     .getDrawable(R.drawable.jito),
-                        "El kilo de jitomate esta a $30.00", 29.99,  "#009688"));
+                        "El kilo de jitomate esta a $30.00", 29.99,  "#009688","0"));
             catalog.add(new Product("Aguacates", res
                     .getDrawable(R.drawable.aguacate),
-                    "El kilo de aguacate esta a $25.00", 24.99,  "#B2DFDB"));
+                    "El kilo de aguacate esta a $25.00", 24.99,  "#B2DFDB","0"));
             catalog.add(new Product("Carne", res
                     .getDrawable(R.drawable.carne),
-                    "El kilo de carne esta a $140.00", 14.99,  "#009688"));
+                    "El kilo de carne esta a $140.00", 14.99,  "#009688","0"));
             catalog.add(new Product("Carne", res
                     .getDrawable(R.drawable.carne),
-                    "El kilo de carne esta a $140.00", 14.99,  "#B2DFDB"));
+                    "El kilo de carne esta a $140.00", 14.99,  "#B2DFDB","0"));
             catalog.add(new Product("Carne", res
                     .getDrawable(R.drawable.carne),
-                    "El kilo de carne esta a $140.00", 14.99,  "#009688"));
+                    "El kilo de carne esta a $140.00", 14.99,  "#009688","0"));
             catalog.add(new Product("Carne", res
                     .getDrawable(R.drawable.carne),
-                    "El kilo de carne esta a $140.00", 14.99,  "#B2DFDB"));
+                    "El kilo de carne esta a $140.00", 14.99,  "#B2DFDB","0"));
             catalog.add(new Product("Carne", res
                     .getDrawable(R.drawable.carne),
-                    "El kilo de carne esta a $140.00", 14.99,  "#009688"));
+                    "El kilo de carne esta a $140.00", 14.99,  "#009688","0"));
             catalog.add(new Product("Carne", res
                     .getDrawable(R.drawable.carne),
-                    "El kilo de carne esta a $140.00", 14.99,  "#B2DFDB"));
+                    "El kilo de carne esta a $140.00", 14.99,  "#B2DFDB","0"));
         }
 
         return catalog;
