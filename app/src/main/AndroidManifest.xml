@@ -14,10 +14,10 @@
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity android:name="com.facebook.LoginActivity" />
 
         <meta-data
@@ -28,13 +28,25 @@
             android:name=".PefilActivity"
             android:label="@string/title_activity_pefil" >
         </activity>
+
         <activity
             android:name=".JsonActivity"
             android:label="@string/title_activity_json" >
         </activity>
+
         <activity
-            android:name=".Test"
-            android:label="@string/title_activity_test" >
+            android:name=".CatalogActivity"
+            android:label="@string/app_name" >
+        </activity>
+
+        <activity
+            android:name=".ProductDetailsActivity"
+            android:label="@string/app_name" >
+        </activity>
+        
+        <activity
+            android:name=".ShoppingCartActivity"
+            android:label="@string/app_name" >
         </activity>
     </application>
 

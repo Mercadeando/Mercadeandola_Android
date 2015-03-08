@@ -95,15 +95,13 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
 
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, Test.class);
+                Intent intent = new Intent(MainActivity.this, CatalogActivity.class);
                 startActivity(intent);
             }
         });
-
         //findViewById(R.id.buttonPefil).setOnClickListener(this);
         //findViewById(R.id.buttonRequestJson).setOnClickListener(this);
         //findViewById(R.id.buttonShare).setOnClickListener(this);
-
     }
 
 

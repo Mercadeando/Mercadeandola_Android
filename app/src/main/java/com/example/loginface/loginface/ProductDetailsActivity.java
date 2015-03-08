@@ -1,7 +1,5 @@
 package com.example.loginface.loginface;
 
-
-
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
