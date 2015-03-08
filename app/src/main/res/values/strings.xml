@@ -16,7 +16,6 @@
     <string name="message_error">Ocurrió un error, verifica tu conexión a Internet y vuelve a intentarlo</string>
     <string name="welcome">Bienvenido</string>
     <string name="text_share">COMPARTIR</string>
-
     <string name="text_fist_name">Nombre: </string>
     <string name="text_last_name">Apellido: </string>
     <string name="text_email">Email:</string>
@@ -25,6 +24,6 @@
     <string name="url_devf">http://www.devf.mx/</string>
     <string name="ur_devf_logo">http://www.devf.mx/images/og-devf.png</string>
     <string name="text_devf_share">Entra a la mejor escuela de Hackers</string>
-
+    <string name="title_activity_test">Test</string>
 
 </resources>

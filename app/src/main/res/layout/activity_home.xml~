@@ -13,7 +13,6 @@
         />
 
     <Button
-        android:visibility="invisible"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/text_pefil"
@@ -26,7 +25,6 @@
         tools:ignore="UnusedAttribute" />
 
     <Button
-        android:visibility="invisible"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/text_request_josn"
@@ -39,7 +37,6 @@
         tools:ignore="UnusedAttribute" />
 
     <Button
-        android:visibility="invisible"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/text_share"
@@ -50,21 +47,6 @@
         android:layout_marginTop="12dp"
         android:layout_below="@+id/buttonRequestJson"
         tools:ignore="UnusedAttribute" />
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Pide tu mandado"
-        android:id="@+id/button_order"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Saca tu domingo"
-        android:id="@+id/button_messenger"
-        android:layout_alignParentBottom="true"
-        android:layout_alignEnd="@+id/button_order"
-        android:layout_marginBottom="103dp" />
 
 </RelativeLayout>

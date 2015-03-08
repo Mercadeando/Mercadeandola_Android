@@ -11,7 +11,6 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
 import android.widget.Toast;
 
 import com.facebook.FacebookException;
@@ -28,24 +27,7 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.Arrays;
 
-/*
-public class MainActivity extends ActionBarActivity {
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
-        findViewById(R.id.button_order).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, CatalogActivity.class);
-                startActivity(intent);
-            }
-        });
-    }
-
-*/
 public class MainActivity extends ActionBarActivity implements View.OnClickListener, LoginButton.OnErrorListener, Session.StatusCallback {
 
     @Override
@@ -80,29 +62,9 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         //si manda un error
         loginButtonFacebook.setSessionStatusCallback(this);
 
-
-      /*  findViewById(R.id.buttonLoginFacebook).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, HomeActivity.class);
-                startActivity(intent);
-            }
-        });
-
-       */
-        Button btnOrder = (Button) findViewById(R.id.button_order);
-        btnOrder.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, Test.class);
-                startActivity(intent);
-            }
-        });
-
-        //findViewById(R.id.buttonPefil).setOnClickListener(this);
-        //findViewById(R.id.buttonRequestJson).setOnClickListener(this);
-        //findViewById(R.id.buttonShare).setOnClickListener(this);
+        findViewById(R.id.buttonPefil).setOnClickListener(this);
+        findViewById(R.id.buttonRequestJson).setOnClickListener(this);
+        findViewById(R.id.buttonShare).setOnClickListener(this);
 
     }
 
@@ -139,7 +101,6 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
                 case R.id.buttonPefil:
                     Intent intentPerfil = new Intent(MainActivity.this, PefilActivity.class);
                     startActivity(intentPerfil);
-
                     break;
                 case R.id.buttonRequestJson:
                     Intent intentJson = new Intent(MainActivity.this, JsonActivity.class);
@@ -171,11 +132,7 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
                         public void onCompleted(GraphUser user,
                                                 Response response) {
                             if (user != null) {
-
-
-
                                 Toast.makeText(MainActivity.this, getString(R.string.welcome) + " " + user.getName(), Toast.LENGTH_SHORT).show();
-
                             } else {
                                 Toast.makeText(MainActivity.this, R.string.message_error, Toast.LENGTH_SHORT).show();
                                 logoutFacebook();
@@ -183,8 +140,7 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
                         }
                     }).executeAsync();
 
-           // Intent intent = new Intent(MainActivity.this, HomeActivity.class);
-            //startActivity(intent);
+
         } else if (sessionState.isClosed()) {
             Toast.makeText(MainActivity.this, R.string.message_log_out, Toast.LENGTH_SHORT).show();
         }
