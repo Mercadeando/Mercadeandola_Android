@@ -25,5 +25,6 @@
     <string name="ur_devf_logo">http://www.devf.mx/images/og-devf.png</string>
     <string name="text_devf_share">Entra a la mejor escuela de Hackers</string>
     <string name="title_activity_test">Test</string>
+    <string name="splash">splash</string>
 
 </resources>

@@ -41,7 +41,7 @@
             android:text="Quitar del carrito"/>
 
         <Button
-            android:id="@+id/Button02"
+            android:id="@+id/ButtonPay"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Realizar pedido"/>

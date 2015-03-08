@@ -2,6 +2,7 @@ package com.example.loginface.loginface;
 
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -61,6 +62,16 @@ public class ShoppingCartActivity extends Activity {
                     }
                 }
                 mProductAdapter.notifyDataSetChanged();
+            }
+        });
+
+        Button payButton = (Button) findViewById(R.id.ButtonPay);
+        payButton.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Intent confirmation = new Intent(getBaseContext(), Confirmation.class);
+                startActivity(confirmation);
             }
         });
 

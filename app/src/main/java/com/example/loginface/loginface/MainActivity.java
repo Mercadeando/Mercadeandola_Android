@@ -53,7 +53,6 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
         //Pa sacar el hasis, forma facil de generar la key hash que vamos a colocr el developer.facebook
         try {
             PackageInfo info = getPackageManager().getPackageInfo(
@@ -90,15 +89,7 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         });
 
        */
-        Button btnOrder = (Button) findViewById(R.id.button_order);
-        btnOrder.setOnClickListener(new View.OnClickListener() {
 
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, CatalogActivity.class);
-                startActivity(intent);
-            }
-        });
         //findViewById(R.id.buttonPefil).setOnClickListener(this);
         //findViewById(R.id.buttonRequestJson).setOnClickListener(this);
         //findViewById(R.id.buttonShare).setOnClickListener(this);
@@ -170,9 +161,8 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
                                                 Response response) {
                             if (user != null) {
 
-
-
                                 Toast.makeText(MainActivity.this, getString(R.string.welcome) + " " + user.getName(), Toast.LENGTH_SHORT).show();
+
 
                             } else {
                                 Toast.makeText(MainActivity.this, R.string.message_error, Toast.LENGTH_SHORT).show();
